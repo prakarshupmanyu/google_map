@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 300px;
+        width: 100%;
+       }
+       td{
+        border: solid 1px;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <div id="directions-panel"></div>
+    <div>
+      Click on map to add a marker. Click on a marker to remove it.
+    </div>
+    <div id='locations'>
+      Selected Locations for Tour (in sequence):
+      <button id="reset">Reset Markers</button>
+      <button id="submit">Get Tour</button>
+      <table style="border: solid;">
+        <tr>
+          <th>Location</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="js/map.js"></script>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXZ9KpZZiMv056mSr9lsk8XYkkJPSIo4A&callback=mymap.initMap">
+    </script>
+  </body>
+</html>
